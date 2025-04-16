@@ -1,0 +1,5 @@
+en:
+  theme_metadata:
+    description: "Data Explorer Sidebar"
+    settings:
+      example_setting: Adds data explorer to the sidebar for admins"

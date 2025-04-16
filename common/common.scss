@@ -1,0 +1,136 @@
+// Theme's SCSS
+.data-explorer-card {
+    padding: 1.25rem;
+    border-radius: 8px;
+    border: 1px solid var(--primary-low);
+    background-color: var(--background-alt);
+    color: var(--primary);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    /*! max-width: 46rem; */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.data-explorer-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.data-explorer-avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    object-fit: cover;
+    border: 1px solid var(--primary-low);
+    flex-shrink: 0;
+}
+
+.data-explorer-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-explorer-user strong {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.data-explorer-time {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+    color: var(--primary-medium);
+}
+
+.data-explorer-time svg {
+    width: 0.75rem;
+    height: 0.75rem;
+    color: var(--primary-medium);
+}
+
+.data-explorer-title {
+    margin-bottom: 0.5rem;
+}
+
+.data-explorer-title a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.data-explorer-title a:hover {
+    color: var(--primary-btn-bg-hover);
+    text-decoration: underline;
+}
+
+.data-explorer-snippet {
+    font-size: 0.875rem;
+    color: var(--primary-medium);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.4;
+}
+
+.sidebar-data-explorer-edit {
+    .modal-body {
+        padding: 1em;
+    }
+
+    .title {
+        margin-bottom: 1em;
+
+        h3 {
+            margin: 0;
+            font-size: var(--font-up-1);
+            font-weight: 500;
+        }
+    }
+
+    .queries-list {
+        max-height: 60vh;
+        overflow-y: auto;
+        padding: 0.5em;
+    }
+
+    .query-item {
+        padding: 0.5em;
+        border-radius: var(--d-border-radius);
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background-color: var(--primary-50);
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            cursor: pointer;
+
+            input[type="checkbox"] {
+                margin: 0;
+            }
+
+            .query-name {
+                font-size: var(--font-0);
+                color: var(--primary);
+            }
+        }
+    }
+
+    .modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5em;
+        padding: 1em;
+        border-top: 1px solid var(--primary-300);
+    }
+}
